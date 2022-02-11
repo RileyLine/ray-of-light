@@ -87,6 +87,9 @@ function rol_setup() {
 			'flex-height' => true,
 		)
 	);
+
+		
+	add_theme_support( 'wp-block-styles' );
 }
 add_action( 'after_setup_theme', 'rol_setup' );
 
@@ -148,3 +151,8 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/block-editor.php';

@@ -12,19 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rol' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'rol' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'rol' ), 'rol', '<a href="https://rileyline.ca/">Riley Line</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="footer-content">
+			<h3>Footer Heading 1</h3>
+			<p>Cato 1</p>
+			<p>Cato 2</p>
+			<p>Cato 3</p>
+			<p>Cato 4</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
