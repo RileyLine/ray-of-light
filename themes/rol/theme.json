@@ -6,9 +6,9 @@
 			"defaultPalette": false,
             "palette": [
                 {
-                    "name": "Black",
-                    "slug": "black",
-                    "color": "#000000"
+                    "name": "Light Black",
+                    "slug": "light-black",
+                    "color": "#4d4d4d"
                 },
                 {
                     "name": "White",
