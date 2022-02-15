@@ -137,6 +137,18 @@ function rol_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'rol_scripts' );
 
+function rol_enqueue_styles() {
+    wp_enqueue_style( 
+		'header-styles',
+		get_template_directory_uri() . '/assets/css/header-styles.css'
+	);
+    wp_enqueue_style( 
+		'main-styles',
+		get_template_directory_uri() . '/assets/css/styles.css'
+	);
+}
+add_action( 'wp_enqueue_scripts', 'rol_enqueue_styles' );
+
 /**
  * Custom template tags for this theme.
  */
