@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Hahmlet:wght@400;700&display=swap');
+
+/* font-family: 'Cantarell', sans-serif;
+font-family: 'Hahmlet', serif; */
+
+* {
+	box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 }
 
-.wp-block-quote {
-    color: blue;
-	font-style: italic;
-}
 
-header {
-	background-color: rosybrown;
-}
+
+/* Layout Stuff */
 
 .entry-content > * {
 	max-width: 1000px;
@@ -22,4 +26,121 @@ header {
 
 .alignfull {
 	max-width: 100%;
+}
+
+/** Styling individual blocks */
+
+/* Paragraph */
+.standard-para {
+	font-size: 14pt;
+	/* padding: 10px 0; */
+	margin: 20px auto;
+}
+
+/* Heading */
+.standard-heading {
+	margin: 20px auto;
+}
+
+/* List */
+.standard-list {
+	list-style: square;
+	margin: 20px auto;
+}
+.standard-list li {
+	font-size: 14pt;
+}
+.standard-list li::marker {
+	color: #1c6e66;
+	margin: 20px auto;
+}
+
+/* Block Quote */
+.wp-block-quote {
+	font-style: italic;
+	border-left: 0.25em solid #1c6e66;
+	margin: 20px auto;
+}
+
+/* Table */
+.wp-block-table {
+	border-radius: 10px 10px 0 0;
+	margin: 20px auto;
+	overflow-x: hidden;
+}
+
+.wp-block-table th{
+	font-family: 'Hahmlet', serif;
+	font-size: 14pt;
+	text-transform: uppercase;
+	background-color: #1c6e66;
+	color: white;
+	border: none;
+}
+.wp-block-table thead {
+	border-bottom: 3px solid #4d4d4d80;
+}
+.wp-block-table td {
+	font-size: 12pt;
+	border-left: 1px solid #4d4d4d80;
+	border-right: 1px solid #4d4d4d80;
+	border-top: none;
+	border-bottom: none;
+	color: #4d4d4d;
+}
+.wp-block-table tr:nth-child(odd) {
+	background-color: #ebebeb;
+}
+
+.wp-block-pullquote {
+	border-top: 5px solid #1c6e66;
+	border-bottom: 5px solid #1c6e66;
+	padding: 25px;
+	margin: 20px auto;
+}
+
+.wp-block-verse {
+	margin: 20px auto;
+}
+
+.wp-block-code {
+	background-color: #eee;
+	line-height: 1.2;
+}
+
+/* Button */
+.btn-filled a {
+	color: white;
+	font-family: 'Cantarell', sans-serif;
+	background-color: #1c6e66;
+	font-weight: 400;
+	margin: 20px 0;
+}
+.btn-outline a {
+	color: #1c6e66 !important;
+	font-family: 'Cantarell', sans-serif;
+	background-color: white;
+	border: 3px solid #1c6e66;
+	font-weight: 400;
+	margin: 20px 0;
+}
+
+/* Calendar */
+
+.wp-block-calendar {
+	margin: 20px auto;
+}
+.wp-block-calendar table caption {
+	color: #4d4d4d;
+	font-size: 16pt;
+}
+.wp-block-calendar table th {
+	background-color: #1c6e66;
+	color: white;
+	font-weight: 600;
+	font-size: 14pt;
+}
+.wp-block-calendar a {
+	color: #1c6e66;
+	font-weight: 600;
 }
