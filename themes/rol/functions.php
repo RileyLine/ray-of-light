@@ -143,6 +143,10 @@ function rol_enqueue_styles() {
 		get_template_directory_uri() . '/assets/css/header-styles.css'
 	);
     wp_enqueue_style( 
+		'footer-styles',
+		get_template_directory_uri() . '/assets/css/footer-styles.css'
+	);
+    wp_enqueue_style( 
 		'main-styles',
 		get_template_directory_uri() . '/assets/css/styles.css'
 	);
