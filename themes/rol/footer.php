@@ -12,13 +12,24 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="footer-content">
-			<h3>Footer Heading 1</h3>
-			<p>Cato 1</p>
-			<p>Cato 2</p>
-			<p>Cato 3</p>
-			<p>Cato 4</p>
+		<h1>Stay In Touch!</h1>
+		<div class="social-holder">
+			<div class="social-media-entry">
+				<i class="fab fa-etsy"></i>
+				<p>Etsy</p>
+			</div>
+			<div class="social-media-entry">
+				<i class="fab fa-facebook"></i>
+				<p>Facebook</p>
+			</div>
+			<div class="social-media-entry">
+				<i class="fab fa-instagram"></i>
+				<p>Instagram</p>
+			</div>
 		</div>
+		<section class="bottom-footer">
+			<p>Ray of Light Glasswork &copy;, All Rights Reserved, 2022</p>
+		</section>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
