@@ -8,7 +8,7 @@
 }
 
 #site-logo {
-	width: 200px;
+	width: 175px;
 	margin: 0px auto 20px auto;
 	display: flex;
 	justify-content: center;
@@ -56,5 +56,6 @@
 	border-top: 1px solid #ccc;
 	padding: 10px 0 10px 0;
 	background-color: #1c6e66;
+	background-color: #3a5553;
 	box-shadow: 0 -5px 10px 3px rgba(0, 0, 0, 0.1);
 }
