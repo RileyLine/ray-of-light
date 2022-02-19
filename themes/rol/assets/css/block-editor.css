@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Heading */
 .standard-heading {
-	margin: 20px auto;
+	margin: 20px auto 10px auto;
 }
 
 /* List */
@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 20px auto;
 	overflow-x: hidden;
 }
-
 .wp-block-table th{
 	font-family: 'Hahmlet', serif;
 	font-size: 14pt;
@@ -109,20 +108,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Button */
-.btn-filled a {
+.wp-block-button a {
 	color: white;
 	font-family: 'Cantarell', sans-serif;
 	background-color: #1c6e66;
 	font-weight: 400;
 	margin: 20px 0;
 }
-.btn-outline a {
+
+.is-style-outline .wp-block-button__link {
 	color: #1c6e66 !important;
 	font-family: 'Cantarell', sans-serif;
 	background-color: white;
 	border: 3px solid #1c6e66;
 	font-weight: 400;
 	margin: 20px 0;
+}
+
+.is-style-outline>.wp-block-button__link:not(.has-background), .wp-block-button__link.is-style-outline:not(.has-background) {
+	background-color: white;
 }
 
 /* Calendar */
@@ -143,4 +147,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .wp-block-calendar a {
 	color: #1c6e66;
 	font-weight: 600;
+}
+
+.wp-block-image {
+	margin: 0 auto;
+}
+
+.wp-block-columns {
+	margin: 50px auto;
+}
+
+.column-edit {
+	background-color: #1c6e66;
+	color: white;
+	padding-left: 20px;
 }
