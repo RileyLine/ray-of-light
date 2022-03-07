@@ -323,22 +323,12 @@ class Slider extends AbstractRenderable {
 
 
             Css::addInline($this->features->translateUrl->replaceUrl($this->sliderType->getStyle()), $this->elementId);
-
-
-            $jsInlineMode = Settings::get('javascript-inline', 'head');
-            if (class_exists('ElementorPro\Plugin', false)) {
-                $jsInlineMode = 'body';
-            }
-        
-            switch ($jsInlineMode) {
-                case 'body':
-                    $slider .= Html::script($this->sliderType->getScript());
-                    break;
-                case 'head':
-                default:
-                    Js::addInline($this->sliderType->getScript());
-                    break;
-            }
+            /**
+             * On WordPress, we need to add the slider's Inline JavaScript into the Head.
+             *
+             * @see SSDEV-3540
+             */
+            Js::addInline($this->sliderType->getScript());
         }
 
         $html = '';
@@ -414,7 +404,12 @@ class Slider extends AbstractRenderable {
         }
 
         if ($needDivWrap) {
-            return Html::tag("div", array(), $html);
+            $attr = array();
+            if ($this->params->get('clear-both', 1)) {
+                $attr['class'] = 'n2_clear';
+            }
+
+            return Html::tag("div", $attr, $html);
         }
 
         return $html;

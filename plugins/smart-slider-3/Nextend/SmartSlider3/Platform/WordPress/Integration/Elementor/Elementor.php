@@ -16,7 +16,7 @@ class Elementor {
         add_action('elementor/init', array(
             $this,
             'init'
-        ));
+        ), 0);
     }
 
     public function init() {

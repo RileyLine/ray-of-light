@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-11-16 15:36+0100\n"
-"PO-Revision-Date: 2021-11-16 18:37+0100\n"
+"POT-Creation-Date: 2022-01-17 09:52+0100\n"
+"PO-Revision-Date: 2022-01-17 13:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: ;n2_;n2_e;n2_n:1,2;n2_en:1,2;n2_x:1,2c;n2_ex:1,2c\n"
 "X-Poedit-Flags-xgettext: --no-location\n"
@@ -1140,14 +1140,20 @@ msgstr "Grupos"
 msgid "Set"
 msgstr "Fijar"
 
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Group"
+msgstr "Grupo"
+
+msgid "Edit slider"
+msgstr "Editar slider"
+
 msgid "Up"
 msgstr "Arriba"
 
 msgid "Insert group"
 msgstr "Insertar grupo"
-
-msgid "Group"
-msgstr "Grupo"
 
 msgid "Move to trash"
 msgstr "Mover a la papelera"
@@ -1190,6 +1196,24 @@ msgstr "eliminar estos slides"
 
 msgid "delete this slide"
 msgstr "eliminar este slide"
+
+msgid "Max width"
+msgstr "Ancho máximo"
+
+msgid "Margin"
+msgstr "Margen"
+
+msgid "top"
+msgstr "superior"
+
+msgid "right"
+msgstr "derecha"
+
+msgid "bottom"
+msgstr "inferior"
+
+msgid "left"
+msgstr "izquierda"
 
 msgid "Animations"
 msgstr "Animación"
@@ -1565,9 +1589,6 @@ msgstr "Modo de relleno"
 
 msgid "Align"
 msgstr "Alinear"
-
-msgid "Margin"
-msgstr "Margen"
 
 msgid "Puts a fix margin around your slider."
 msgstr "Coloca un margen al rededor de tu slider."
@@ -2177,9 +2198,6 @@ msgstr "Degradado"
 msgid "Color end"
 msgstr "Color final"
 
-msgid "Max width"
-msgstr "Ancho máximo"
-
 msgid "Position"
 msgstr "Posición"
 
@@ -2524,9 +2542,6 @@ msgstr "Aumentar tamaño"
 msgid "Scale down"
 msgstr "Reducir tamaño"
 
-msgid "Edit"
-msgstr "Editar"
-
 msgid "Static overlay"
 msgstr "Superposición estática"
 
@@ -2578,8 +2593,8 @@ msgstr "Slide dos"
 msgid "Drop images here"
 msgstr "Suelta tus imágenes aquí"
 
-msgid "Edit slider"
-msgstr "Editar slider"
+msgid "Search Project"
+msgstr "Buscar proyecto"
 
 msgid "View trash"
 msgstr "Ver papelera"
@@ -2605,8 +2620,28 @@ msgstr "Primero lo más antiguo"
 msgid "Export"
 msgstr "Exportar"
 
+msgid "Show"
+msgstr "Mostrar"
+
+#, php-format
+msgid "Showing %s to %s of %s projects"
+msgstr "Mostrando %s de %s de %s proyectos"
+
+msgid "No projects to show"
+msgstr "No hay proyectos para mostrar"
+
 msgid "New project"
 msgstr "Nuevo proyecto"
+
+msgid "Sorry we couldn’t find any matches"
+msgstr "Disculpa, no encontramos ninguna coincidencia"
+
+msgid "Please try searching with another term."
+msgstr "Por favor intenta buscar otro término."
+
+#, php-format
+msgid "Showing %s results for %s."
+msgstr "Mostrando %s resultados para %s."
 
 msgid "Module"
 msgstr "Modulo"
@@ -4781,7 +4816,7 @@ msgid "Secondary"
 msgstr "Secundario"
 
 msgid "Flip"
-msgstr "Tirar"
+msgstr "Dar vuelta"
 
 msgid "Grow"
 msgstr "Crecer"
@@ -4866,6 +4901,9 @@ msgstr "Abanico 2"
 msgid "Fan 3"
 msgstr "Abanico 3"
 
+msgid "Fan 4"
+msgstr "Abanico 4"
+
 msgid "Hills"
 msgstr "Colinas"
 
@@ -4907,6 +4945,24 @@ msgstr "Ola 2"
 
 msgid "Waves"
 msgstr "Olas"
+
+msgid "Columns 1"
+msgstr "Columnas 1"
+
+msgid "Columns 2"
+msgstr "Columnas 2"
+
+msgid "Paper 1"
+msgstr "Papel 1"
+
+msgid "Paper 2"
+msgstr "Papel 2"
+
+msgid "Paper 3"
+msgstr "Papel 3"
+
+msgid "Paper 4"
+msgstr "Papel 4"
 
 msgid "2 Colors"
 msgstr "2 colores"
@@ -6105,7 +6161,7 @@ msgid "Animation duration"
 msgstr "Duración de la animación"
 
 msgid "Countdown"
-msgstr "Contador"
+msgstr "Cuenta regresiva"
 
 msgid "Days"
 msgstr "Días"

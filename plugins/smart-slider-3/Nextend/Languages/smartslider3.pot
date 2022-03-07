@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-01-13 13:55+0100\n"
+"POT-Creation-Date: 2022-02-21 14:21+0100\n"
 "PO-Revision-Date: 2020-03-10 19:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -177,6 +177,12 @@ msgid "Frontend"
 msgstr ""
 
 msgid "You can load Google Fonts on the frontend."
+msgstr ""
+
+msgid "Save fonts locally"
+msgstr ""
+
+msgid "You can store the used Google Fonts on your server. This way all Google Fonts will load from your own domain."
 msgstr ""
 
 msgid "Backend"
@@ -4574,10 +4580,25 @@ msgstr ""
 msgid "Source folder"
 msgstr ""
 
+msgid "Filename based exclusion"
+msgstr ""
+
 msgid "Remove resized images"
 msgstr ""
 
 msgid "This option removes files that match the \"-[number]x[number].[extension]\" pattern in the end of their file names. For example, \"myimage.jpg\" will stay in the generator result, but \"myimage-120x120.jpg\" will be removed, because it's the same image, just in a smaller size."
+msgstr ""
+
+msgid "Filename has to contain"
+msgstr ""
+
+msgid "Only those images will be asked down, which have the given texts within their filenames. You can write down multiple texts separated by comma."
+msgstr ""
+
+msgid "Filename cannot contain"
+msgstr ""
+
+msgid "Only those images will be asked down, which don't have the given texts within their filenames. You can write down multiple texts separated by comma."
 msgstr ""
 
 msgid "Filename"
@@ -4593,6 +4614,39 @@ msgid "Folder not found."
 msgstr ""
 
 msgid "Wrong path. This is the default upload/media folder path, so try to navigate from here:"
+msgstr ""
+
+msgid "The App ID and the Secret is empty!"
+msgstr ""
+
+msgid "The token will expire at:"
+msgstr ""
+
+msgid "Access token was not returned.Please check the credentials!"
+msgstr ""
+
+msgid "The token expired. Please request new token!"
+msgstr ""
+
+msgid "The token will expire in two days! Please refresh the token!"
+msgstr ""
+
+msgid "Refresh Token"
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Album loading method"
+msgstr ""
+
+msgid "Load first images only"
+msgstr ""
+
+msgid "Load album images separately"
+msgstr ""
+
+msgid "Load Album images as record data"
 msgstr ""
 
 msgid "JSON from url"
@@ -4983,31 +5037,6 @@ msgid "Show parent products only"
 msgstr ""
 
 #, php-format
-msgid "Creates slides from %1$s events."
-msgstr ""
-
-msgid "Create custom date variables"
-msgstr ""
-
-msgid "You can write any date format (http://php.net/manual/en/function.date.php) in separate lines, and new variables will be created for them."
-msgstr ""
-
-msgid "Write the original text, like 'Monday' then two | signs, and the text you want it to be translated to, for example 'Montag'. Together: Monday||Montag"
-msgstr ""
-
-msgid "Event start date"
-msgstr ""
-
-msgid "Event end date"
-msgstr ""
-
-msgid "Event creation date"
-msgstr ""
-
-msgid "Event modification date"
-msgstr ""
-
-#, php-format
 msgid "Creates slides from %1$s galleries."
 msgstr ""
 
@@ -5025,6 +5054,10 @@ msgid "You don't have custom generators yet. %1$s Check the documentation %2$s t
 msgstr ""
 
 msgid "No options given"
+msgstr ""
+
+#, php-format
+msgid "Creates slides from %1$s events."
 msgstr ""
 
 msgid "Exclude event IDs (One ID per line)"
@@ -5078,7 +5111,19 @@ msgstr ""
 msgid "Hide From Event Listings"
 msgstr ""
 
+msgid "Event start date"
+msgstr ""
+
+msgid "Event end date"
+msgstr ""
+
 msgid "Event cost"
+msgstr ""
+
+msgid "Event creation date"
+msgstr ""
+
+msgid "Event modification date"
 msgstr ""
 
 msgid "Metakey name"

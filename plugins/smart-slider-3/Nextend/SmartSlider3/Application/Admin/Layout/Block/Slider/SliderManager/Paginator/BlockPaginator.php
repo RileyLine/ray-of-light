@@ -103,9 +103,9 @@ class BlockPaginator extends AbstractBlock {
 
     public function displayPaginationLimiters() {
         $blockLimiter = new BlockFloatingMenu($this);
-
-        $blockButton = new BlockButtonPlain($this);
-        $blockButton->setLabel(n2_('Show') . " <span class='limitNumber'>" . $this->paginationLimit . "</span>");
+        $blockButton  = new BlockButtonPlain($this);
+        $limitText    = intval($this->paginationLimit) ? $this->paginationLimit : n2_('All');
+        $blockButton->setLabel(n2_('Show') . " <span class='limitNumber'>" . $limitText . "</span>");
         $blockButton->setIcon('ssi_16 ssi_16--selectarrow');
         $blockButton->setSmall();
         $blockLimiter->setButton($blockButton);

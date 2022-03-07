@@ -3,8 +3,8 @@ Contributors: nextendweb
 Tags: slider, wordpress slider, image slider, layer slider, responsive slider, slideshow, fullwidth slider, post slider, horizontal slider, vertical slider, photo slider, video slider
 Donate link: https://sites.fastspring.com/nextend/product/smartslider3donate
 Requires at least: 4.9
-Tested up to: 5.9.0
-Stable tag: 3.5.1.3
+Tested up to: 5.9
+Stable tag: 3.5.1.4
 Requires PHP: 7.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -208,6 +208,24 @@ Of course! Smart Slider use protocol relative urls which works fine on http:// a
 9. Layer slider with layers styles. Made with FREE version.
 
 == Changelog ==
+
+= 3.5.1.4 - 28. Feburary 2022 =
+* Feature: Save Fonts Locally option to cache Google Fonts. 
+* Fix: Updating from really old Smart Slider versions might caused a PHP notice to appear.      
+* Fix: Smart Slider element doesn't work within Elementor Pro when WooCommerce is also installed on the website. 
+* Fix: Weglot plugin's language switcher appeared in page builder created sliders. 
+* Fix: Mobile Firefox slide swiping didn't worked well, as mobile Firefox won't allow to stop page scroll any longer. 
+* Fix: Better error handling for cases when the WebP support is disabled on the server to avoid PHP errors.
+* Fix: Dynamic slides didn't accepted variables in color fields. 
+* Fix: WordPress posts generator code optimization and Elementor compatibility. 
+* Fix: n2-clear class added to the main div that contains the ss3-force-full-width and ss3-fullpage elements to make the Clear Before option work properly. 
+* Fix: Smart Slider display fixed in Tatsu builder. 
+* Fix: Compatibility fix for lower WordPress versions which use the classic widgets. 
+* Deprecated: Slider's Inline JavaScript option. 
+* Other: Spanish translation updated. Thanks, Rodrigo! 
+* Other: Google font list updated with latest fonts 
+* Other: Links updated in the Help Section to point to more appropriate help articles. 
+
 
 = 3.5.1.3 - 18. January 2022 =
 * Feature: Pagination and Search options in the Dashboard. 

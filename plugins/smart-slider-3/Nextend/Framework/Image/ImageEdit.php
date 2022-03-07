@@ -22,7 +22,7 @@ class ImageEdit {
             $imageUrl = ResourceTranslator::toUrl(ResourceTranslator::pathToResource($imageUrlOrPath));
         }
 
-        if ($targetWidth <= 0 || $targetHeight <= 0 || !function_exists('imagecreatefrompng')) {
+        if (!extension_loaded('gd') || $targetWidth <= 0 || $targetHeight <= 0) {
             return $imageUrl;
         }
 
@@ -52,8 +52,12 @@ class ImageEdit {
             if (isset($pathInfo['extension'])) {
                 $extension = self::validateGDExtension($pathInfo['extension']);
             }
-
             if (!$extension) {
+                return $originalImageUrl;
+            }
+
+
+            if (strtolower($extension) === 'webp' && !function_exists('imagecreatefromwebp')) {
                 return $originalImageUrl;
             }
 
@@ -98,6 +102,9 @@ class ImageEdit {
                     $extension = 'png';
                     break;
                 case IMAGETYPE_WEBP:
+                    if (!function_exists('imagecreatefromwebp')) {
+                        return $originalImageUrl;
+                    }
                     $extension = 'webp';
                     break;
             }
@@ -229,7 +236,7 @@ class ImageEdit {
             $imageUrl = ResourceTranslator::toUrl($imageUrlOrPath);
         }
 
-        if ($scale <= 0 || !function_exists('imagecreatefrompng')) {
+        if (!extension_loaded('gd') || $scale <= 0) {
             return $imageUrl;
         }
 
@@ -260,6 +267,10 @@ class ImageEdit {
                 return $originalImageUrl;
             }
 
+            if (strtolower($extension) === 'webp' && !function_exists('imagecreatefromwebp')) {
+                return $originalImageUrl;
+            }
+
             return ResourceTranslator::urlToResource(Filesystem::pathToAbsoluteURL($cache->makeCache($extension, array(
                 self::class,
                 '_scaleRemoteImage'
@@ -285,6 +296,9 @@ class ImageEdit {
                     $extension = 'png';
                     break;
                 case IMAGETYPE_WEBP:
+                    if (!function_exists('imagecreatefromwebp')) {
+                        return $originalImageUrl;
+                    }
                     $extension = 'webp';
                     break;
             }
@@ -515,7 +529,7 @@ class ImageEdit {
             $imageUrl = ResourceTranslator::toUrl($imageUrlOrPath);
         }
 
-        if (!function_exists('imagecreatefrompng') || ($options['mode'] === 'scale' && $options['scale'] <= 0)) {
+        if (!extension_loaded('gd') || $options['mode'] === 'scale' && $options['scale'] <= 0) {
             return Filesystem::pathToAbsoluteURL($imageUrl);
         }
 
@@ -548,6 +562,10 @@ class ImageEdit {
                 return $originalImageUrl;
             }
 
+            if (strtolower($extension) === 'webp' && !function_exists('imagecreatefromwebp')) {
+                return $originalImageUrl;
+            }
+
             return ResourceTranslator::urlToResource(Filesystem::pathToAbsoluteURL($cache->makeCache('webp', array(
                 self::class,
                 '_scaleRemoteImageWebp'
@@ -568,6 +586,9 @@ class ImageEdit {
                     $extension = 'png';
                     break;
                 case IMAGETYPE_WEBP:
+                    if (!function_exists('imagecreatefromwebp')) {
+                        return $originalImageUrl;
+                    }
                     $extension = 'webp';
                     break;
             }

@@ -190,6 +190,14 @@ $conflicts = $this->getConflicts();
                 $debug[] = '';
             }
 
+            if (extension_loaded('gd')) {
+                $debug[] = 'GD modules status:';
+                foreach (gd_info() as $module => $status) {
+                    $debug[] = $module . ' : ' . (!empty($status) ? $status : "0");
+                }
+            }
+            $debug[] = '';
+
             if (function_exists('get_loaded_extensions')) {
 
                 $debug[] = 'Uncommon PHP extensions:';

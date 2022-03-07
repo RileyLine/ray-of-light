@@ -58,6 +58,10 @@ class PlatformWordPress extends AbstractPlatform {
         return current_time('timestamp');
     }
 
+    public function localizeDate($date) {
+        return date_i18n(get_option('date_format'), $date);
+    }
+
     public function filterAssetsPath($assetsPath) {
 
         return str_replace(SMARTSLIDER3_LIBRARY_PATH, NEXTEND_SMARTSLIDER_3 . 'Public', $assetsPath);
