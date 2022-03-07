@@ -1,0 +1,126 @@
+.entry-content > .woocommerce {
+	padding-top: 60px;
+}
+
+a.checkout-button.button.alt.wc-forward {
+	background-color: #1c6e66;
+}
+
+.product-thumbnail a img {
+	width: 72px !important;
+}
+
+.woocommerce ul.products li.product a img {
+	margin: 0;
+}
+
+.woocommerce-loop-product__title {
+	color: #333;
+	text-transform: uppercase;
+	padding: 0.5rem 0 0 0 !important;
+}
+
+.related.products h2 {
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+	color: #333;
+}
+
+.product.type-product .button {
+	background-color: #1c6e66 !important;
+	color: white !important;
+}
+
+.product_meta {
+	display: flex;
+	flex-direction: column;
+	color: #333;
+}
+
+.sku_wrapper {
+	font-weight: 600;
+}
+.sku_wrapper span {
+	font-weight: 300;
+	color: #333;
+}
+.posted_in {
+	font-weight: 600;
+}
+.posted_in a {
+	font-weight: 300;
+	color: #333;
+}
+.tagged_as {
+	font-weight: 600;
+}
+.tagged_as a {
+	font-weight: 300;
+	color: #333;
+}
+
+.product-name a {
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14pt;
+}
+
+.product-price span {
+	color: #333;
+	font-size: 14pt;
+}
+
+.quantity input {
+	font-size: 14pt
+}
+
+.product-subtotal span {
+	color: #333;
+	font-size: 14pt;
+}
+
+/* img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+	width: 72px !important;
+} */
+
+button.single_add_to_cart_button.button.alt {
+	background-color: #1c6e66;
+}
+
+.woocommerce-billing-fields {
+	color: #333;
+}
+
+.woocommerce-billing-fields label {
+	color: #777;
+	font-weight: 600;
+}
+
+.woocommerce-additional-fields {
+	color: #333;
+}
+
+#order_review_heading {
+	margin-top: 30px;
+	color: #333;
+}
+
+.woocommerce-checkout-review-order-table {
+	color: #333;
+}
+.woocommerce-checkout-review-order-table thead {
+	background-color: #1c6e66;
+	color: white;
+}
+
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
+	border-color: #333;
+}
+
+.form-row input {
+	font-size: 14pt;
+}
