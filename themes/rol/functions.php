@@ -150,6 +150,10 @@ function rol_enqueue_styles() {
 		'main-styles',
 		get_template_directory_uri() . '/assets/css/styles.css'
 	);
+    wp_enqueue_style( 
+		'woocommerce-styles',
+		get_template_directory_uri() . '/assets/css/woocommerce-styles.css'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'rol_enqueue_styles' );
 
