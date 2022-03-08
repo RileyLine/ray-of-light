@@ -1,3 +1,7 @@
 .entry-header {
 	display: none;
 }
+
+.entry-content {
+	color: #333;
+}
