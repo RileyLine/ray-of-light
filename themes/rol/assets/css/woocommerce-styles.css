@@ -109,6 +109,11 @@ button.single_add_to_cart_button.button.alt {
 	color: #333;
 }
 
+.shop_table_responsive thead {
+	background-color: #1c6e66;
+	color: white;
+}
+
 .woocommerce-checkout-review-order-table {
 	color: #333;
 }
@@ -123,4 +128,45 @@ button.single_add_to_cart_button.button.alt {
 
 .form-row input {
 	font-size: 14pt;
+}
+
+.woocommerce-MyAccount-navigation {
+	background-color: #1c6e66;
+	color: white;
+	margin-bottom: 1rem;
+	padding: 1rem 0;
+}
+
+.woocommerce-MyAccount-navigation ul {
+	list-style-type: square;
+}
+
+.woocommerce-MyAccount-navigation ul li a{
+	color: white;
+}
+
+.woocommerce-MyAccount-content {
+	color: #333;
+}
+
+.woocommerce-MyAccount-content p a {
+	color: #1c6e66;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	background-color: #1c6e66 !important;
+	color: white !important;
+	margin: 0px 0 10px 0;
+}
+
+.woocommerce-EditAccountForm fieldset {
+	margin-bottom: 10px;
+}
+
+.edit {
+	background-color: #1c6e66;
+	color: white;
+	border-radius: 5px;
+	padding: 3px 5px;
+	text-decoration: none;
 }
