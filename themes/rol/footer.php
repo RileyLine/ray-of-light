@@ -16,15 +16,16 @@
 		<div class="social-holder">
 			<div class="social-media-entry">
 				<i class="fab fa-etsy"></i>
-				<p>Etsy</p>
+				<!-- <p>Etsy</p> -->
+				<a class="social-media-link" target="_BLANK" href="<?php echo get_theme_mod('rol_etsy_url') ?>"> <?php echo get_theme_mod('rol_etsy_title') ?></a>
 			</div>
 			<div class="social-media-entry">
 				<i class="fab fa-facebook"></i>
-				<p>Facebook</p>
+				<a class="social-media-link" target="_BLANK" href="<?php echo get_theme_mod('rol_facebook_url') ?>"> <?php echo get_theme_mod('rol_facebook_title') ?></a>
 			</div>
 			<div class="social-media-entry">
 				<i class="fab fa-instagram"></i>
-				<p>Instagram</p>
+				<a class="social-media-link" target="_BLANK" href="<?php echo get_theme_mod('rol_insta_url') ?>"> <?php echo get_theme_mod('rol_insta_title') ?></a>
 			</div>
 		</div>
 		<section class="bottom-footer">
