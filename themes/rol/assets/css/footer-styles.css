@@ -27,6 +27,10 @@ footer h1 {
 	justify-content: center;
 }
 
+.social-media-link {
+	color: white;
+}
+
 .social-media-entry i {
 	font-size: 24pt;
 }
