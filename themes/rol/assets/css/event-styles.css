@@ -1,0 +1,14 @@
+.rol_event {
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.rol_event header h2 {
+	text-align: center;
+}
+
+.rol_event header h2 a {
+	color: #333;
+}

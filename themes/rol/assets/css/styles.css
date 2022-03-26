@@ -1,7 +1,44 @@
+.rol_event > .entry-header {
+	display: block;
+}
+
+.post > .entry-header {
+	display: block;
+}
+
+.post {
+    width: 75%;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.post header h2 {
+	text-align: center;
+}
+
+.post header h2 a {
+	color: #333;
+}
+
+.post header .entry-meta {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.post header .entry-meta span a {
+	color: #1c6e66;
+}
+
 .entry-header {
 	display: none;
 }
 
 .entry-content {
 	color: #333;
+}
+
+.page-header {
+	text-align: center;
+	margin-top: 25px;
 }
