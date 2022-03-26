@@ -154,6 +154,10 @@ function rol_enqueue_styles() {
 		'woocommerce-styles',
 		get_template_directory_uri() . '/assets/css/woocommerce-styles.css'
 	);
+    wp_enqueue_style( 
+		'event-styles',
+		get_template_directory_uri() . '/assets/css/event-styles.css'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'rol_enqueue_styles' );
 
@@ -173,6 +177,11 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Customizer additions.
+ * Block Editor additions.
  */
 require get_template_directory() . '/inc/block-editor.php';
+
+/**
+ * Event Post Type additions.
+ */
+require get_template_directory() . '/inc/post-types.php';
