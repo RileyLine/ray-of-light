@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Hahmlet:wght@400;700&display=swap');
 
-/* font-family: 'Cantarell', sans-serif;
-font-family: 'Hahmlet', serif; */
+/** Setting the individual block editor element styles to reflect comp layout/design */
 
 * {
 	box-sizing: border-box;
@@ -11,25 +10,19 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 }
 
-
-
 /* Layout Stuff */
-
 .entry-content > * {
 	max-width: 1000px;
 	margin: 0 auto;
 }
-
 .alignwide {
 	max-width: 1200px;
 }
-
 .alignfull {
 	max-width: 100%;
 }
 
 /** Styling individual blocks */
-
 /* Paragraph */
 .standard-para {
 	font-size: 14pt;
@@ -91,6 +84,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	background-color: #ebebeb;
 }
 
+/* Pullquote */
 .wp-block-pullquote {
 	border-top: 5px solid #1c6e66;
 	border-bottom: 5px solid #1c6e66;
@@ -98,10 +92,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 20px auto;
 }
 
+/* Verse */
 .wp-block-verse {
 	margin: 20px auto;
 }
 
+/* Code block */
 .wp-block-code {
 	background-color: #eee;
 	line-height: 1.2;
@@ -115,7 +111,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	font-weight: 400;
 	margin: 20px 0;
 }
-
 .is-style-outline .wp-block-button__link {
 	color: #1c6e66 !important;
 	font-family: 'Cantarell', sans-serif;
@@ -124,13 +119,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	font-weight: 400;
 	margin: 20px 0;
 }
-
 .is-style-outline>.wp-block-button__link:not(.has-background), .wp-block-button__link.is-style-outline:not(.has-background) {
 	background-color: white;
 }
 
 /* Calendar */
-
 .wp-block-calendar {
 	margin: 20px auto;
 }
@@ -149,14 +142,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	font-weight: 600;
 }
 
+/* Image */
 .wp-block-image {
 	margin: 0 auto;
 }
 
+/* Columns */
 .wp-block-columns {
 	margin: 25px auto 50px auto;
 }
-
+/* Column adjust */
 .column-edit {
 	background-color: #1c6e66;
 	color: white;

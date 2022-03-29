@@ -47,5 +47,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-// get_sidebar();
+// Removed sidebar as it doesn't fit aesthetic.
 get_footer();

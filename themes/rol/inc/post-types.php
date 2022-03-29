@@ -1,4 +1,6 @@
 <?php
+
+// As covered in class, this creates a custom post type which will be called "Event".
 function rol_post_types() {
     $labels = array(
         'name'                  => _x( 'Events', 'Post type general name', 'rol' ),

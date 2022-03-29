@@ -53,4 +53,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
+// Removed sidebar as it doesn't fit aesthetic
 get_footer();

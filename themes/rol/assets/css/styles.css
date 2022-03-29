@@ -1,3 +1,5 @@
+/* This stylesheet is used for generic styling of common elements. (Elements seen on multiple pages, repetitively) */
+
 .rol_event > .entry-header {
 	display: block;
 }
@@ -41,4 +43,16 @@
 .page-header {
 	text-align: center;
 	margin-top: 25px;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+	.column-edit {
+		padding-left: 0px;
+	}
+
+	.wp-block-column {
+		padding: 0 20px 20px 20px;
+	}
 }

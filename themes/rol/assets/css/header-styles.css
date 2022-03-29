@@ -1,3 +1,5 @@
+/* Styles specific to the header */
+
 .site-header {
 	background-color: #305a55;
 	box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.25);
@@ -30,6 +32,7 @@
 
 #primary-menu a {
 	color: white;
+	font-size: 16pt;
 	text-decoration: none;
 	font-weight: 300;
 	font-family: 'Hahmlet', serif;
@@ -42,7 +45,6 @@
 }
 
 #primary-menu li {
-	font-size: 16pt;
 	width: 50%;
 	text-align: center;
 	border-right: 1px solid hsl(173, 17%, 55%);
@@ -58,4 +60,18 @@
 	background-color: #1c6e66;
 	background-color: #3a5553;
 	box-shadow: 0 -5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 640px) {
+	#primary-menu a {
+		font-size: 12pt;
+	}
+
+	.menu-primary-menu-container {
+		border-top: 1px solid #ccc;
+		padding: 10px 0 10px 0;
+		background-color: #1c6e66;
+		background-color: #3a5553;
+		box-shadow: 0 -5px 10px 3px rgba(0, 0, 0, 0.1);
+	}
 }
