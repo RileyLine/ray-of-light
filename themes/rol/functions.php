@@ -162,6 +162,19 @@ function rol_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'rol_enqueue_styles' );
 
 /**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ * 
+ * Borrowed from: https://developer.wordpress.org/reference/functions/the_excerpt/#comment-325
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
